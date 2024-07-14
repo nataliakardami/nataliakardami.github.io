@@ -59,7 +59,7 @@ p a:hover {
 }
 #header ul {
 	margin: 0;
-	padding: 56px 0 0;
+	padding: 0 0 0;
 }
 #header ul li {
 	display: inline;
@@ -211,9 +211,7 @@ p a:hover {
 	margin: 0 0 13px;
 	padding: 0;
 	position: relative;
-	width: 100%;
-	
-}
+	width: 100%;}
 #body #featured img {
 	border: 0;
 	display: block;
@@ -243,13 +241,15 @@ p a:hover {
 	text-transform: uppercase;
 }
 #body #featured div span {
-	background: #252525;
+	background: transparent;
 	color: #fff;
 	display: inline-block;
-	font-size: 40px;
+	font-size: 2.5em;
 	margin: 7px 0;
 	padding: 42px 27px;
 	border-radius: 5%;
+	text-shadow: 3px 2px 0.5px #211e1e;
+
 }
 #body #featured div a {
 	background: #0ba39c;
@@ -425,6 +425,15 @@ p a:hover {
 	justify-content: center;
 }
 
+/* genre selector */
+#clicker{
+	display: flex;
+	justify-content: center;
+	font-family: 'leckerli_oneregular';
+	padding-top: 30px;
+	margin-top: 10px;
+}
+
 /* Albums Animation!*/
 .loop_wrap {
 	display: flex;
@@ -466,4 +475,13 @@ p a:hover {
   .loop_wrap:hover a {
 	animation-play-state: paused;
   }
-  
+/* Welcome Text */	
+  h3 {
+	font-family: 'leckerli_oneregular';
+	position: absolute;
+	top: -10%;
+	color: #e79e9e;
+	font-size:3.5em;
+  }
+
+
