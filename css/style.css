@@ -687,3 +687,89 @@ credits to Alpine Day
 	font-family: 'leckerli_oneregular';
 	color: aliceblue;
 }
+
+/* ----------- END SHUFFLE REC--------------------------- */
+
+/* ---------- Gallery Page ----------------- */
+.gallery{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.playlists{
+	display: flex;
+	
+	justify-content: space-evenly;
+	
+}
+
+.playlists h3 {
+  font-size: 30px;
+  padding: 30px 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(to left, #4a0e1c, #b393d3);
+  color: wheat;
+}
+.article p {
+	max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-family: 'Roboto';
+    line-height: 1.6;
+	font-size: 1.2em;
+	color: #666;
+	margin: 15px 0;
+}
+.playlist h3 {
+    font-size: 2em;
+    color: #fff;
+    background: linear-gradient(90deg, #8e44ad, #c0392b);
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.playlist h3:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* ----------- END Gallery Page ----------------- */
+
+/* ----------- NOT MY STYLE ----------------- */
+#body h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin: 20px 0;
+    background: linear-gradient(90deg, #ff77a9, #ff477e, #d560d6, #8e44ad);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradient-animation 3s ease-in-out infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* ----------- NOT MY STYLE ----------------- */
