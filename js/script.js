@@ -41,11 +41,10 @@ const songList = [
 function getRandomSong() {
     const randomIndex = Math.floor(Math.random() * songList.length);
     const song = songList[randomIndex];
-    const rec = `Track Name: ${song.trackName}, Artist: ${song.artistName}, Album: ${song.albumName}`;
+    const rec = `Track Name: ${song.trackName},</br> Artist: ${song.artistName}, </br> Album: ${song.albumName}`;
     return rec;
 }
 function getRec(){
-    var str = document.getElementById("rec").innerHTML;
     var txt = getRandomSong();
-    alert(txt);
+    var str = document.getElementById("rec").innerHTML = txt;
 }

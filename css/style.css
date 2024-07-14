@@ -106,7 +106,8 @@ p a:hover {
 	padding: 0;
 	width: 960px;
 }
-#body > div img {
+/*changed #body to #gallery */
+#gallery > div img {
 	border: 2px solid #292929;
 	margin: 24px 0 0;
 	padding: 0;
@@ -410,7 +411,7 @@ p a:hover {
 #footer div ul li #pinterest:hover {
 	background-position: -44px -132px;
 }
-/* ----------------------MY CSS */
+/* ---------------------- MY CSS  -------------------------------------------------*/
 
 .welcome {
 	background-color: #252525;
@@ -432,7 +433,6 @@ p a:hover {
 	flex-direction: column;
 	flex-wrap: wrap;
 	font-family: 'leckerli_oneregular';
-	border: 1px solid red;
 	height: 100px
 
 }
@@ -586,7 +586,8 @@ credits to Alpine Day
 
 /* CSS */
 .button-85 {
-  padding: 0.6em 15em;
+  margin-top: 30px;
+  padding: 0.6em 1.5em;
   border: none;
   outline: none;
   color: rgb(255, 255, 255);
@@ -659,4 +660,28 @@ credits to Alpine Day
 	font-size: 2em;
 	font-style: 'Arial';
 	
+}
+
+/* ----------- SHUFFLE REC--------------------------- */
+.shuffle{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	height: 40vh;
+	width:10vh;
+	border: 1px solid #252525;
+	margin-top: 30px;
+	margin-bottom: 20px;
+
+}
+#rec {
+	padding-top: 20px;
+	height: 10vh;
+	min-height: 80px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.shuffle p {
+	font-size: 1.5em;
+	margin-top: 10px;
+	font-family: 'leckerli_oneregular';
 }
