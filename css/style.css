@@ -212,6 +212,7 @@ p a:hover {
 	padding: 0;
 	position: relative;
 	width: 100%;
+	
 }
 #body #featured img {
 	border: 0;
@@ -221,12 +222,12 @@ p a:hover {
 	width: 100%;
 }
 #body #featured div {
-	left: 50%;
+	left: 10%;
 	margin-left: -480px;
 	margin-top: -171px;
 	padding: 0 0 0 470px;
 	position: absolute;
-	top: 50%;
+	top: 70%;
 	text-align: left;
 	width: 490px;
 }
@@ -235,7 +236,7 @@ p a:hover {
 	color: #000;
 	display: inline-block;
 	font-family: poller_oneregular;
-	font-size: 20px;
+	font-size: 0px;
 	font-weight: normal;
 	margin: 0 0 18px;
 	padding: 23px 27px 20px;
@@ -245,9 +246,10 @@ p a:hover {
 	background: #252525;
 	color: #fff;
 	display: inline-block;
-	font-size: 20px;
+	font-size: 40px;
 	margin: 7px 0;
-	padding: 12px 27px;
+	padding: 42px 27px;
+	border-radius: 5%;
 }
 #body #featured div a {
 	background: #0ba39c;
@@ -408,3 +410,60 @@ p a:hover {
 #footer div ul li #pinterest:hover {
 	background-position: -44px -132px;
 }
+/* MY CSS */
+
+.welcome {
+	background-color: #252525;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 55vh;
+}
+.featured-txt{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/* Albums Animation!*/
+.loop_wrap {
+	display: flex;
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+  }
+  
+  .loop_wrap img {
+	width: 200px;
+	height: 200px;
+  }
+
+  @keyframes loop {
+	0% {
+	  transform: translateX(100%);
+	}
+	to {
+	  transform: translateX(-100%);
+	}
+  }
+  
+  @keyframes loop2 {
+	0% {
+	  transform: translateX(0);
+	}
+	to {
+	  transform: translateX(-200%);
+	}
+  }
+  .loop_wrap a:first-child {
+	animation: loop 40s -25s linear infinite;
+  }
+  
+  .loop_wrap a:last-child {
+	animation: loop2 40s linear infinite;
+  }
+  /* This stops the animation on hover for easier clicking */
+  .loop_wrap:hover a {
+	animation-play-state: paused;
+  }
+  
