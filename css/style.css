@@ -672,7 +672,8 @@ credits to Alpine Day
 	border: 1px solid #252525;
 	margin-top: 30px;
 	margin-bottom: 20px;
-
+	background-image: url('../images/bg-neon.jpg');
+	background-size: cover;
 }
 #rec {
 	padding-top: 20px;
@@ -684,4 +685,5 @@ credits to Alpine Day
 	font-size: 1.5em;
 	margin-top: 10px;
 	font-family: 'leckerli_oneregular';
+	color: aliceblue;
 }
